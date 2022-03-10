@@ -23,7 +23,7 @@ class TerminalPlayer implements Player {
   int turn() {
     var score = 0;
     while (true) {
-      print('Please enter your score.');
+      print('${name()}: Please enter your score.');
       var input = stdin.readLineSync();
 
       if (input != null) {
